@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=OmNu-Champagne
+Comment=A champagne colored GTK theme collection. OmNu-Champagne supports the Cinnamon, GNOME, Openbox and XFCE desktop environments.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=OmNu-Champagne
+GtkTheme=OmNu-Champagne
+IconTheme=OmNu-Champagne
+MetacityTheme=OmNu-Champagne
