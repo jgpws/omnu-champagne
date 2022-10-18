@@ -1270,6 +1270,9 @@ headerbar {
       background: none;
       color: mix(#1f1b15,#fad6a5,0.4);
       -gtk-icon-shadow: none; }
+headerbar button:checked:backdrop label {
+      color: rgba(255, 255, 255, 0.5);
+}
 
 toolbar {
   background-color: #fad6a5;
@@ -4653,7 +4656,7 @@ notebook {
         padding-top: 0;
         padding-bottom: 0; }
   notebook > stack:not(:only-child) {
-    background-color: #fad6a5; }
+    background-color: #fff5e7; }
   notebook > header {
     padding: 3px;
     background-color: #fad6a5; }
@@ -6835,7 +6838,10 @@ placessidebar row {
       color: #ffffff;
       background-color: #7d6b53; }
   placessidebar list {
-      background-color: #dbbb90;  
+      background-color: #dbbb90; 
+  }
+  placessidebar list:backdrop{
+  	   background-color: #fad6a5;
   }
 
 /******
@@ -7922,6 +7928,64 @@ GtkWindow > GtkVBox > .dock, GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar 
   .xfce4-panel menu {
     -gtk-icon-effect: none;
     text-shadow: none; }
+    
+#clock-button,
+wnck-pager,
+#sn-button,
+#xfce-notification-plugin {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.xfce4-panel .tasklist .toggle {
+  border-radius: 16px;
+  margin: 2px;
+}
+
+.xfce4-panel .tasklist .toggle:hover,
+.xfce4-panel .flat:hover {
+  background-color: #dfc39e;
+  background-image: linear-gradient(to bottom, #ebd9c2, #d4ad7a);
+  border-color: mix(#7d6b53, rgba(31, 27, 21, 0.4), 0.3);
+}
+
+.xfce4-panel .flat.toggle:hover {
+	color: #1f1b15;
+}
+
+.xfce4-panel .tasklist .toggle:checked {
+    background-color: #7d6b53;
+    background-image: linear-gradient(to top, #8d785d, #6d5e49);
+    color: mix(#1f1b15, #fad6a5, 0.4);
+}
+
+.xfce4-panel .tasklist .toggle:checked label {
+    color: #fff5e7;
+}
+
+#applicationsmenu-button image,
+#whiskermenu-button image {
+  -gtk-icon-transform:scale(0.95);
+  padding-right: 1px;
+  background-color: #dbbb90;
+  background-image: linear-gradient(to bottom, #e6d0b2, #d0a66e);
+  color: #1f1b15;
+}
+
+.xfce4-panel .flat,
+.xfce4-panel #systray-6 box {
+	background-color: #dbbb90;
+	background-image: linear-gradient(to bottom, #e6d0b2, #d0a66e);
+}
+
+.xfce4-panel .flat label {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.thunar .sidebar .view {background-color: #fad6a5;}
+.thunar .sidebar .view  :selected {color: #fff5e7; background-color: #7d6b53;}
+.thunar .standard-view .view :selected {color: #fff5e7; background-color: mix(#1f1b15,#fad6a5,0.5);}
 
 /***********************
  ! Fallback mode panel *

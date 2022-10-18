@@ -1,7 +1,29 @@
 # Oomox GTK Theme (Numix Fork)
 
-gtk-color-scheme =
-"base_color:#fff5e7\nbg_color:#fad6a5\ntooltip_bg_color:#fad6a5\nselected_bg_color:#7d6b53\ntext_color:#1f1b15\nfg_color:#1f1b15\ntooltip_fg_color:#1f1b15\nselected_fg_color:#ffffff\nmenubar_bg_color:#dbbb90\nmenubar_fg_color:#1f1b15\ntoolbar_bg_color:#fad6a5\ntoolbar_fg_color:#1f1b15\nmenu_bg_color:#dbbb90\nmenu_fg_color:#1f1b15\npanel_bg_color:#fad6a5\npanel_fg_color:#1f1b15\nlink_color:#496b88\nbtn_bg_color:#dbbb90\nbtn_fg_color:#1f1b15\ntitlebar_bg_color:#dbbb90\ntitlebar_fg_color:#1f1b15\nprimary_caret_color:#1f1b15\nsecondary_caret_color:#1f1b15\naccent_bg_color:#374550\n"
+gtk-color-scheme = "base_color: #fff5e7"
+gtk-color-scheme = "bg_color: #fad6a5"
+gtk-color-scheme = "tooltip_bg_color: #fad6a5"
+gtk-color-scheme = "selected_bg_color: #7d6b53"
+gtk-color-scheme = "text_color: #1f1b15"
+gtk-color-scheme = "fg_color: #1f1b15"
+gtk-color-scheme = "tooltip_fg_color: #1f1b15"
+gtk-color-scheme = "tooltip_fg_color: #1f1b15"
+gtk-color-scheme = "selected_fg_color: #ffffff"
+gtk-color-scheme = "menubar_bg_color: #dbbb90"
+gtk-color-scheme = "menubar_fg_color: #1f1b15"
+gtk-color-scheme = "toolbar_bg_color: #fad6a5"
+gtk-color-scheme = "toolbar_fg_color: #1f1b15"
+gtk-color-scheme = "menu_bg_color: #dbbb90"
+gtk-color-scheme = "menu_fg_color: #1f1b15"
+gtk-color-scheme = "panel_bg_color: #fad6a5"
+gtk-color-scheme = "panel_fg_color: #1f1b15"
+gtk-color-scheme = "link_color: #496b88"
+gtk-color-scheme = "btn_bg_color: #dbbb90"
+gtk-color-scheme = "btn_fg_color: #1f1b15"
+gtk-color-scheme = "titlebar_bg_color: #dbbb90"
+gtk-color-scheme = "titlebar_fg_color: #1f1b15"
+gtk-color-scheme = "accent_bg_color: #374550"
+
 # Default Style
 
 style "murrine-default" {
@@ -986,8 +1008,6 @@ widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
 
 # button fg workarounds:
 widget_class "*.<GtkButton>.<GtkLabel>" style "murrine-buttonlabel"
-widget_class "*<GtkButton>*<GtkLabel>*" style:highest "murrine-buttonlabel"
-widget_class "*<GtkCheckButton>*<GtkLabel>*" style:highest "clearlooks-radiocheck-label"
 widget_class "*<GtkComboBoxText>*" style "murrine-comboboxtext"
 widget_class "*<GtkToggleButton>*" style "murrine-togglebutton"
 widget_class "*.<GtkCheckButton>" style "murrine-radiocheck"

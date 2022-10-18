@@ -3,7 +3,7 @@
 # License: GPL-3.0+
 
 active_text_color=#1f1b15
-inactive_text_color=#4e4333
+inactive_text_color=#8c795d
 button_offset=8
 button_spacing=0
 show_app_icon=true
