@@ -7929,12 +7929,30 @@ GtkWindow > GtkVBox > .dock, GtkWindow > GtkVBox > .dock > GtkHBox > GtkToolbar 
     -gtk-icon-effect: none;
     text-shadow: none; }
     
+.xfce4-panel.vertical {
+	background-image: linear-gradient(to right, #e6d0b2, #d0a66e);
+}
+    
 #clock-button,
 wnck-pager,
 #sn-button,
 #xfce-notification-plugin {
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.xfce4-panel.vertical #clock-button,
+.xfce4-panel.vertical wnck-pager,
+.xfce4-panel.vertical #sn-button,
+.xfce4-panel.vertical #xfce-notification-plugin {
+  margin-top: 6px;
+  margin-right: 0;
+  margin-bottom: 6px;
+  margin-left: 0;
+}
+
+wnck-pager {
+	background-image: linear-gradient(to right, #e6d0b2, #d0a66e);
 }
 
 .xfce4-panel .tasklist .toggle {
@@ -7949,11 +7967,44 @@ wnck-pager,
   border-color: mix(#7d6b53, rgba(31, 27, 21, 0.4), 0.3);
 }
 
+.xfce4-panel.vertical .tasklist .toggle:hover,
+.xfce4-panel.vertical .flat:hover {
+	background-image: linear-gradient(to right, #ebd9c2, #d4ad7a);
+}
+
+.xfce4-panel button.flat,
+.xfce4-panel #actions-button.flat,
+.xfce4-panel #clock-button.flat,
+.xfce4-panel #xfce4-power-manager-plugin.flat {
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.xfce4-panel button.flat:hover {
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: #dbbb90;
+}
+
+.xfce4-panel.vertical button.flat:hover {
+	border-top: 1px solid;
+	border-right: 0;
+	border-bottom: 1px solid;
+	border-left: 0;
+	border-color: #dbbb90;
+}
+
+#applicationsmenu-button.flat:hover,
+#whiskermenu-button.flat:hover {
+	border: 1px solid #dbbb90;
+}
+
 .xfce4-panel .flat.toggle:hover {
 	color: #1f1b15;
 }
 
-.xfce4-panel .tasklist .toggle:checked {
+.xfce4-panel .tasklist .toggle:checked,
+.xfce4-panel.vertical .tasklist .toggle:checked {
     background-color: #7d6b53;
     background-image: linear-gradient(to top, #8d785d, #6d5e49);
     color: mix(#1f1b15, #fad6a5, 0.4);
@@ -7976,6 +8027,13 @@ wnck-pager,
 .xfce4-panel #systray-6 box {
 	background-color: #dbbb90;
 	background-image: linear-gradient(to bottom, #e6d0b2, #d0a66e);
+}
+
+.xfce4-panel.vertical .flat,
+.xfce4-panel #systray-6 box.vertical,
+#applicationsmenu-button .vertical image,
+#whiskermenu-button .vertical image {
+	background-image: linear-gradient(to right, #e6d0b2, #d0a66e);
 }
 
 .xfce4-panel .flat label {
